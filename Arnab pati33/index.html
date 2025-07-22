@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Arnab Pati - Web Developer & UI/UX Designer. Creating digital experiences with modern design.">
+    <meta name="keywords"
+        content="web developer, UI/UX designer, portfolio, frontend developer, javascript, react, designer">
+    <meta property="og:title" content="Arnab Pati | Web Developer & UI/UX Designer">
+    <meta property="og:description"
+        content="Creating digital experiences with modern design principles and clean code.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arnabpati.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Arnab Pati | Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner container">
+            <a href="#" class="logo">
+                <span class="logo-icon">A</span>
+                <span>Arnab Pati</span>
+            </a>
+
+            <div class="header-time" id="headerTime"></div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://i.ibb.co/wh0qSvh3/Whats-App-Image-2024-11-17-at-10-43-23.jpg" alt="Arnab Pati"
+                    class="profile-img" loading="lazy">
+
+                <h1>Arnab Pati</h1>
+
+                <div class="typewriter-container">
+                    <div class="typewriter">
+                        <span class="typewriter-text" id="typewriterText"></span>
+                    </div>
+                </div>
+
+                <h2>Web Developer & UI Designer</h2>
+
+                <p>Creating digital experiences with clean code and thoughtful design.</p>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> View Work
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://instagram.com/arnabpati_" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/arnabpati33" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arnab-pati-4787362a7" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/arnabpati_" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <!-- Stats Counter -->
+                                <div class="stats-container fade-in delay-1">
+                    <div class="stat-item">
+                        <div class="stat-number" id="cvViews">0</div>
+                        <div class="stat-label">CV Views</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="cvDownloads">0</div>
+                        <div class="stat-label">CV Downloads</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="profileViews">0</div>
+                        <div class="stat-label">Profile Views</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download Section -->
+    <section class="cv-section fade-in delay-2">
+        <div class="container">
+            <h3>Want to know more about my professional journey?</h3>
+            <div class="cv-buttons">
+                <a href="Arnab_Pati_Resume.pdf" class="btn btn-primary" id="viewCv">
+                    <i class="fas fa-file-alt"></i> View CV
+                </a>
+                <a href="Arnab_Pati_Resume.pdf" class="btn btn-tertiary" id="downloadCv">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I'm a passionate web developer and designer currently pursuing my B.Tech in Computer Science
+                        Engineering. With a keen eye for detail and a love for creating beautiful, functional digital
+                        experiences, I bring ideas to life through code and design.</p>
+                    <p>My journey in web development began when I was in school, and since then, I've been constantly
+                        learning and improving my skills to stay at the forefront of web technologies.</p>
+
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5">
+                            </div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3">
+                            </div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-img">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    alt="React">
+                            </div>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline fade-in delay-1">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Present (Expected)</div>
+                        <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+                        <p class="timeline-description">Brainware University</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Present</div>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <p class="timeline-description">Building websites for clients worldwide</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">UI/UX Design Certification</h3>
+                        <p class="timeline-description">Completed online specialization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">My Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon-container-img">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="Frontend Development">
+                        </div>
+                        <h3 class="skill-name">Frontend Development</h3>
+                    </div>
+                    <p class="skill-description">Building responsive, accessible websites with clean, efficient code
+                        that works across all devices and browsers.</p>
+                    <div class="tools-container">
+                        <span class="tool">HTML</span>
+                        <span class="tool">CSS</span>
+                        <span class="tool">JavaScript</span>
+                        <span class="tool">React</span>
+                        <span class="tool">Next.js</span>
+                        <span class="tool">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in delay-1">
+                    <div class="skill-header">
+                        <div class="skill-icon-container-img">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="UI/UX Design">
+                        </div>
+                        <h3 class="skill-name">UI/UX Design</h3>
+                    </div>
+                    <p class="skill-description">Creating intuitive, user-friendly interfaces with modern design
+                        principles and attention to detail.</p>
+                    <div class="tools-container">
+                        <span class="tool">Figma</span>
+                        <span class="tool">Adobe XD</span>
+                        <span class="tool">User Research</span>
+                        <span class="tool">Wireframing</span>
+                        <span class="tool">Prototyping</span>
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in delay-2">
+                    <div class="skill-header">
+                        <div class="skill-icon-container-img">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Backend Development">
+                        </div>
+                        <h3 class="skill-name">Backend Development</h3>
+                    </div>
+                    <p class="skill-description">Building robust server-side applications and APIs to power modern web
+                        applications.</p>
+                    <div class="tools-container">
+                        <span class="tool">Node.js</span>
+                        <span class="tool">Express</span>
+                        <span class="tool">MongoDB</span>
+                        <span class="tool">Firebase</span>
+                        <span class="tool">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+
+            <div class="projects-container">
+                <div class="project-card fade-in">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                            alt="Modern Login Page" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Modern Login Page</h3>
+                        <p class="project-description">A sleek, responsive login page with form validation and smooth
+                            animations built with React and Tailwind CSS.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Form Validation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in delay-1">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80"
+                            alt="Weather Forecast App" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p class="project-description">Real-time weather application with 5-day forecast using the
+                            OpenWeather API and geolocation.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">Geolocation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in delay-2">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                            alt="E-commerce Dashboard" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-description">Admin dashboard for e-commerce platforms with product management,
+                            order tracking, and analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:arnabpati870@gmail.com">arnabpati870@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <a href="tel:+917319261068">+91 73192 61068</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/arnab-pati-4787362a7" target="_blank"
+                                rel="noopener noreferrer">Arnab Pati</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Kolkata, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in delay-1">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Thank you for your message! I'll get back to you soon.
+                        </div>
+
+                        <div class="form-error" id="formError">
+                            <i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again
+                            later.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Arnab Pati</a>
+
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://instagram.com/arnabpati_" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/arnabpati33" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arnab-pati-4787362a7" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/arnabpati_" target="_blank" rel="noopener noreferrer"
+                        class="footer-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <p class="copyright">© 2024 Arnab Pati. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- CV Modal -->
+    <div class="modal" id="cvModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="#" style="width:100%; height:80vh; border:none;"></iframe>
+            <img src="Arnab_Pati_Resume.pdf" alt="">
+        </div>
+    </div>
+
+    <!-- 404 Page (hidden by default) -->
+    <div class="not-found" style="display: none;">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="#home" class="btn btn-primary">Go to Homepage</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("gA-ZQop2VUmnN3z7y"); // Replace with your EmailJS user ID
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
